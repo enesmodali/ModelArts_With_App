@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flower Recognition</title>
+</head>
+
+<h1 style="text-align: center;">Flower İmage</h1>
+
+<body id="page-top" background="https://images8.alphacoders.com/423/423161.jpg">
+ <form action="http://127.0.0.1:8000/recognize" method="post" enctype="multipart/form-data" >
+
+    <div class="well" data-bind="fileDrag: fileData, enable: onClear">
+
+        <input  type="file" name="imgFilename" data-bind="fileInput: fileData" accept="image/*">
+    </div>
+    <h1></h1>
+ </br>
+    <input type="submit" value="Recognize">
+ </form>
+</body>
+
+
+</html>
